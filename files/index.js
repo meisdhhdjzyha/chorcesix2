@@ -2,18 +2,18 @@ const express = require("express");
 const app = express();
 const { exec, execSync } = require('child_process');
 const port = process.env.SERVER_PORT || process.env.PORT || 7000;        
-const UUID = process.env.UUID || '0af60c77-588b-47fa-9b7e-bdfcd2cd9e22'; //若需要改UUID，需要在config.json里改为一致
+const UUID = process.env.UUID || '9797745a-4a53-11ef-9454-0242ac120002'; //若需要改UUID，需要在config.json里改为一致
 const NEZHA_SERVER = process.env.NEZHA_SERVER || 'nz.f4i.cn';     
 const NEZHA_PORT = process.env.NEZHA_PORT || '5555';                     // 哪吒端口为{443,8443,2096,2087,2083,2053}其中之一开启tls
 const NEZHA_KEY = process.env.NEZHA_KEY || '5ddVS93Eq0Uc9he880';
-const ARGO_DOMAIN = process.env.ARGO_DOMAIN || 'chroeeozw.jeepcetfupot.tk';     // 建议使用token，argo端口8080，cf后台设置需对应,使用json需上传json和yml文件至files目录
-const ARGO_AUTH = process.env.ARGO_AUTH || 'eyJhIjoiNTIzYTQ3YzliZWIwMzkxNzZiNDQ3OGVkZjNlN2U5OTAiLCJ0IjoiZjMwNWI4ZTMtZWNmNC00NmRkLTgzMTgtMzRjZWM0OTdjNDgzIiwicyI6Ik5qTXpZV1pqWTJNdFkyVXhNeTAwTmpNekxUbGlOalF0WWpFNE1tUXpOekl6TkdOaCJ9';
+const ARGO_DOMAIN = process.env.ARGO_DOMAIN || 'chrrocesix1.uhfdsf43.eu.org';     // 建议使用token，argo端口8080，cf后台设置需对应,使用json需上传json和yml文件至files目录
+const ARGO_AUTH = process.env.ARGO_AUTH || 'eyJhIjoiOTdiOTJkZDlhNTJjYWU1ZThhNmZlYzY5NmU5NTRkYmUiLCJ0IjoiMmEzNWVkODUtMGM4NC00YWM4LWI5MDYtMDIxMzYwYzQxZGE0IiwicyI6IllXTmtPVGhpTWpZdE56UTNaQzAwWmpSa0xUazVNekF0WVRKaFlUazVOak13WmpnMSJ9';
 const CFIP = process.env.CFIP || 'sabaylok.com';
-const NAME = process.env.NAME || 'Chroeozw';
+const NAME = process.env.NAME || 'Chroeosixteen1';
 
 // root route
 app.get("/", function(req, res) {
-  res.send("Happy funk!");
+  res.send("Happy fight!");
 });
 
 const metaInfo = execSync(
